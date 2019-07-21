@@ -418,6 +418,7 @@ service time_daemon /vendor/bin/time_daemon
     class main
     user root
     group root
+    disabled
 
 on property:init.svc.media=restarting
     restart qcamerasvr
