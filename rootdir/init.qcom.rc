@@ -414,11 +414,10 @@ on property:persist.sys.fp.vendor=goodix
     setprop ro.hardware.fingerprint goodix
     start fps_hal
 
-service time_daemon /vendor/bin/time_daemon
+service time_daemon /vendor/bin/time_daemon_HYBRIS_DISABLED
     class main
     user root
     group root
-    disabled
 
 on property:init.svc.media=restarting
     restart qcamerasvr
